@@ -34,6 +34,7 @@ python monkeywork.py "L:\monkeywork-test\"
 ```
 
 Options are:
+
 -f | force selected direcotry and delete all contents in set directory
 
 ## Installation
