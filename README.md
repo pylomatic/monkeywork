@@ -22,7 +22,7 @@ The program can and will destroy files in the selected work directory. Be sure t
 
 ## Run in console
 
-You can run the `monkeywork.py`directly from from the console with:
+You can run the `monkeywork.py` directly from from the console with:
 
 ```bash
 python monkeywork.py "<Path to your workdir>" [OPTIONS]
@@ -65,4 +65,4 @@ orther avaiable setting:
 |max_file_amount:int | maximumg file count
 |target_file_amount:int | program targets this amount of files |
 |path_length_limit:int | program should not exceed set path length |
-|logging_to_file_enabled:bool | enable loggin to file |
+|logging_to_file_enabled:bool | enable logging to file |
