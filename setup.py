@@ -9,7 +9,7 @@ setup(
     description="Write and edit random files in a given directory",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url="https://github.com/yourusername/your-package-name",
+    url="https://github.com/pylomatic/monkeywork",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
