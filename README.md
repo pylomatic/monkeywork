@@ -30,7 +30,7 @@ python monkeywork.py "<Path to your workdir>" [OPTIONS]
 
 example:
 ```bash
-python monkeywork.py "L:\\monkeywork-test\\"
+python monkeywork.py "L:\monkeywork-test\"
 ```
 
 Options are:
