@@ -64,4 +64,4 @@ orther avaiable setting:
 |max_file_amount:int | maximumg file count
 |target_file_amount:int | program targets this amount of files |
 |path_length_limit:int | program should not exceed set path length |
-|logging_to_file_enabled:bool | log to file |
+|logging_to_file_enabled:bool | enable loggin to file |
