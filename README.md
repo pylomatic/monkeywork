@@ -25,7 +25,12 @@ The program can and will destroy files in the selected work directory. Be sure t
 You can run the `monkeywork.py`directly from from the console with:
 
 ```bash
-python monkeywork.py <Path to your workdir> [OPTIONs]
+python monkeywork.py "<Path to your workdir>" [OPTIONS]
+```
+
+example:
+```bash
+python monkeywork.py "L:\\monkeywork-test\\"
 ```
 
 Options are:
