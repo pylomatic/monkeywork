@@ -57,7 +57,7 @@ mky.run()
 orther avaiable setting:
 |variable | Description |
 |---|---|
-|workdir:str| must be set |
+|workdir:str| must be set to a valid path |
 |interval_min_s:float | shortest interval |
 |interval_max_s:float | longest interval |
 |max_file_size_mb:int | maximum file size in MB |
