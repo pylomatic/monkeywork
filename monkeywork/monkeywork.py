@@ -238,12 +238,12 @@ if __name__ == "__main__":
             workdir = Path(sys.argv[1])
 
             if not os.listdir(workdir) or '-f' in sys.argv[2:]:
-                print (f"Target directory is empty or '-f' was set. {workdir} will be used\n!! FILES IN TARGET DIRECTORY WILL BE DELETED !!\nType 'y' to confirm...")
+                print (f"Target directory is empty or '-f' was set. {workdir} will be used\n!! FILES IN TARGET DIRECTORY WILL BE DELETED !!")
                 if '-y' in sys.argv[2:]:
                     monkey = Monkey(workdir=workdir)
                     print ("start")
                     monkey.run()
-                elif input() == 'y':
+                elif input("Type 'y' to confirm...") == 'y':
                     monkey = Monkey(workdir=workdir)
                     print ("start")
                     monkey.run()
