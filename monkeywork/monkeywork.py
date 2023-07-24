@@ -235,19 +235,16 @@ class Monkey():
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         if os.path.exists(sys.argv[1]):
-            if sys.argv[1][0] == '"' and sys.argv[1][-1] == '"':
-                workdir = Path(sys.argv[1])
-            else:
-                print(f"Use Quotation marks for your path. Ex. \"L:\\monkey work\\test\\\"")
-                exit()
+            workdir = Path(sys.argv[1])
 
             if not os.listdir(workdir) or '-f' in sys.argv[2:]:
-                print (f"Target directory is empty or '-f' was set. {workdir} will be used\n!! FILES IN TARGET DIRECTORY WILL BE DELETED !!")
-                sleep(5)
-
-                monkey = Monkey(workdir=workdir)
-                print ("start")
-                monkey.run()
+                print (f"Target directory is empty or '-f' was set. {workdir} will be used\n!! FILES IN TARGET DIRECTORY WILL BE DELETED !!\nType 'y' to confirm...")
+                if input() == 'y' or '-y' in sys.argv[2:]:
+                    monkey = Monkey(workdir=workdir)
+                    print ("start")
+                    monkey.run()
+                else:
+                    exit()
 
             else:
                 print(f"Target directory is not empty!\nUse empty target or option '-f'\n!! FILES IN TARGET DIRECTORY WILL BE DELETED !!")
